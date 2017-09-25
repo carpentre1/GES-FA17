@@ -6,30 +6,60 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField]
     float movementSpeed = 4f;
 
+    [SerializeField]
+    float jumpStrength = 5f;
+
+    [SerializeField]
+    Transform groundDetectPoint;
+
+    [SerializeField]
+    float groundDetectRadius = .2f;
+
+    [SerializeField]
+    LayerMask whatCountsAsGround;
+
+    private bool isOnGround;
+
     Rigidbody2D rb;
-    // Use this for initialization
     void Start () {
         //transform.position = new Vector3(1, 1, 1);
         rb = GetComponent<Rigidbody2D>();
 
     }
 	
-	// Update is called once per frame
-	void Update () {
-        //if (Input.GetKey(KeyCode.D)) 
-        //{
-        //    transform.Translate(new Vector3(0.2f, 0, 0));
-        //}
-        //if (Input.GetKey(KeyCode.A))
-        //{
-        //    transform.Translate(new Vector3(-0.2f, 0, 0));
-        //}
-        if (Input.GetButtonDown("Jump"))
+	void Update ()
+    {
+        UpdateIsOnGround();
+        Jump();
+        Movement();
+    }
+    void UpdateIsOnGround()
+    {
+        Collider2D[] groundObjects = Physics2D.OverlapCircleAll(groundDetectPoint.position, groundDetectRadius, whatCountsAsGround);
+        isOnGround = groundObjects.Length > 0;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+
+    }
+
+    private void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && isOnGround)
         {
-            transform.Translate(0, 5, 0);
+
+            rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
         }
+    }
+
+    private void Movement()
+    {
         float horizontalInput = Input.GetAxis("Horizontal");
-        //transform.Translate(0.1f * horizontalInput, 0, 0);
         rb.velocity = new Vector2(horizontalInput * movementSpeed, rb.velocity.y);
     }
 }
