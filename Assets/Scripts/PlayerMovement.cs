@@ -19,11 +19,14 @@ public class PlayerMovement : MonoBehaviour {
     LayerMask whatCountsAsGround;
 
     private bool isOnGround;
+    bool facingRight = true;
 
     Rigidbody2D rb;
+    Animator an;
     void Start () {
         //transform.position = new Vector3(1, 1, 1);
         rb = GetComponent<Rigidbody2D>();
+        an = GetComponent<Animator>();
 
     }
 	
@@ -37,6 +40,13 @@ public class PlayerMovement : MonoBehaviour {
     {
         Collider2D[] groundObjects = Physics2D.OverlapCircleAll(groundDetectPoint.position, groundDetectRadius, whatCountsAsGround);
         isOnGround = groundObjects.Length > 0;
+    }
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -60,6 +70,15 @@ public class PlayerMovement : MonoBehaviour {
     private void Movement()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        an.SetFloat("Speed", Mathf.Abs(horizontalInput));
         rb.velocity = new Vector2(horizontalInput * movementSpeed, rb.velocity.y);
+        if(horizontalInput > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if(horizontalInput < 0 && facingRight)
+        {
+            Flip();
+        }
     }
 }
