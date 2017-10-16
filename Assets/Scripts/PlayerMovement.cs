@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,11 +27,15 @@ public class PlayerMovement : MonoBehaviour {
     private bool isOnGround;
     bool facingRight = true;
     bool canDoubleJump;
+    bool tryingToJump;
+    int coins = 0;
 
     Vector3 spawnPoint;
 
     Rigidbody2D rb;
     Animator an;
+    private float horizontalInput;
+
     void Start () {
         spawnPoint = GameObject.FindGameObjectWithTag("Spawn").transform.position;
         Debug.Log(spawnPoint);
@@ -40,13 +45,38 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 	
-	void Update ()
+	void Update ()//test for input here
     {
+        GetMovementInput();
+        GetJumpInput();
         UpdateIsOnGround();
         if(isOnGround)
         {
             canDoubleJump = true;
         }
+        //Jump();
+        //Movement();
+    }
+
+    private void GetJumpInput()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            tryingToJump = true;
+        }
+        else
+        {
+        //    tryingToJump = false;
+        }
+    }
+
+    private void GetMovementInput()
+    {
+        horizontalInput = Input.GetAxis("Horizontal");
+    }
+
+    private void FixedUpdate()//do the physics operations here
+    {
         Jump();
         Movement();
     }
@@ -66,11 +96,38 @@ public class PlayerMovement : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Collision_Death")
+        {
             transform.position = spawnPoint;
-        if (collision.gameObject.tag == "Finish")
+        }
+        if (collision.gameObject.name == "Finish")
+        {
             transform.position = spawnPoint;
-        if (collision.gameObject.name == "Collision_Bounce")
-            rb.velocity = new Vector2(rb.velocity.x, jumpStrength*1.5f);
+        }
+        if (collision.gameObject.name == "Checkpoint")
+        {
+            spawnPoint = collision.gameObject.transform.position;
+        }
+            if (collision.gameObject.name == "Collision_Bounce")
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpStrength * 1.5f);
+        }
+        if (collision.gameObject.name == "Coin")
+        {
+            coins += 1;
+            collision.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.name == "Jump_Refresh")
+        {
+            canDoubleJump = true;
+            collision.gameObject.SetActive(false);
+            StartCoroutine(Wait());
+            collision.gameObject.SetActive(true);
+        }
+            
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1.5f);
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -79,20 +136,25 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isOnGround)
+        if (tryingToJump && isOnGround)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
+            tryingToJump = false;
         }
-        else if (Input.GetButtonDown("Jump") && !isOnGround && canDoubleJump)
+        else if (tryingToJump && !isOnGround && canDoubleJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
             canDoubleJump = false;
+            tryingToJump = false;
+        }
+        else
+        {
+            tryingToJump = false;
         }
     }
 
     private void Movement()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
         an.SetFloat("Speed", Mathf.Abs(horizontalInput));
         rb.velocity = new Vector2(horizontalInput * movementSpeed, rb.velocity.y);
         if (Mathf.Abs(GetComponent<Rigidbody2D>().velocity.y) > maxYSpeed)
