@@ -3,7 +3,11 @@
  <image source="Platformer Art Complete Pack/Base pack/Tiles/tiles_spritesheet.png" width="914" height="936"/>
  <tile id="0">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Bounce" x="0" y="0" width="70" height="70">
+    <properties>
+     <property name="unity:layer" value="Ground"/>
+    </properties>
+   </object>
   </objectgroup>
  </tile>
  <tile id="2">
@@ -290,7 +294,7 @@
  </tile>
  <tile id="102">
   <objectgroup draworder="index">
-   <object id="4" x="-1" y="30" width="71" height="40"/>
+   <object id="4" type="Death" x="-1" y="30" width="71" height="40"/>
   </objectgroup>
  </tile>
  <tile id="103">
@@ -335,7 +339,7 @@
  </tile>
  <tile id="114">
   <objectgroup draworder="index">
-   <object id="4" x="-1" y="29" width="71" height="40"/>
+   <object id="4" type="Death" x="-1" y="29" width="71" height="40"/>
   </objectgroup>
  </tile>
  <tile id="115">
@@ -431,7 +435,7 @@
  </tile>
  <tile id="138">
   <objectgroup draworder="index">
-   <object id="3" x="-1" y="30" width="71" height="40"/>
+   <object id="3" type="Death" x="-1" y="30" width="71" height="40"/>
   </objectgroup>
  </tile>
  <tile id="139">
@@ -477,7 +481,7 @@
  </tile>
  <tile id="150">
   <objectgroup draworder="index">
-   <object id="6" x="-1" y="30" width="71" height="40"/>
+   <object id="6" type="Death" x="-1" y="30" width="71" height="40"/>
   </objectgroup>
  </tile>
  <tile id="151">
