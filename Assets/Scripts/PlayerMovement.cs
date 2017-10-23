@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool isOnGround;
     bool facingRight = true;
-    bool canDoubleJump;
+    public bool canDoubleJump;
 
     Vector3 spawnPoint;
 
@@ -72,6 +72,16 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.name == "Collision_Bounce")
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength*1.5f);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Collision_Checkpoint")
+        {
+            Debug.Log(collision.gameObject.transform.position);
+            spawnPoint = transform.position;
+        }
+    }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
 

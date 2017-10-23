@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="kenney" tilewidth="70" tileheight="70" spacing="2" tilecount="156" columns="12">
- <image source="Platformer Art Complete Pack/Base pack/Tiles/tiles_spritesheet.png" width="914" height="936"/>
+ <image source="Assets/Platformer Art Complete Pack/Base pack/Tiles/tiles_spritesheet.png" width="914" height="936"/>
  <tile id="0">
   <objectgroup draworder="index">
    <object id="1" type="Bounce" x="0" y="0" width="70" height="70">
@@ -40,6 +40,11 @@
    <object id="1" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
+ <tile id="13">
+  <objectgroup draworder="index">
+   <object id="3" type="Checkpoint" x="17.5" y="17.5" width="35" height="52.5"/>
+  </objectgroup>
+ </tile>
  <tile id="14">
   <objectgroup draworder="index">
    <object id="12" x="-1" y="0" width="71" height="40"/>
@@ -65,6 +70,13 @@
    <object id="1" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
+ <tile id="25">
+  <objectgroup draworder="index" name="Fire1"/>
+  <animation>
+   <frame tileid="25" duration="400"/>
+   <frame tileid="37" duration="400"/>
+  </animation>
+ </tile>
  <tile id="26">
   <objectgroup draworder="index">
    <object id="3" x="-1" y="0" width="71" height="40"/>
@@ -84,6 +96,9 @@
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="70" height="70"/>
   </objectgroup>
+ </tile>
+ <tile id="37">
+  <objectgroup draworder="index" name="Fire2"/>
  </tile>
  <tile id="41">
   <objectgroup draworder="index">
