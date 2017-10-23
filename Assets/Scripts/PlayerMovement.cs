@@ -24,11 +24,14 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField]
     float maxYSpeed = 12f;
 
-    private bool isOnGround;
+    bool isOnGround;
     bool facingRight = true;
-    public bool canDoubleJump;
     bool tryingToJump;
-    int coins = 0;
+
+
+    public bool canDoubleJump;
+    public int coins = 0;
+
 
     Vector3 spawnPoint;
 
