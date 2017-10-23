@@ -8,6 +8,7 @@ TagManager:
   - Bounce
   - Spawn
   - finish
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
@@ -42,12 +43,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Above Player
-    uniqueID: 2921479151
+  - name: Below Player
+    uniqueID: 322791181
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Below Player
-    uniqueID: 322791181
+  - name: Above Player
+    uniqueID: 2921479151
     locked: 0

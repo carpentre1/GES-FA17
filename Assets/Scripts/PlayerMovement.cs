@@ -26,18 +26,15 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool isOnGround;
     bool facingRight = true;
-<<<<<<< HEAD
     public bool canDoubleJump;
-=======
-    bool canDoubleJump;
     bool tryingToJump;
     int coins = 0;
->>>>>>> 215f7397fa3b263b868e0fd5029aa5c34c0e6968
 
     Vector3 spawnPoint;
 
     Rigidbody2D rb;
     Animator an;
+    Animator an_torch;
     private float horizontalInput;
 
     void Start () {
@@ -136,10 +133,12 @@ public class PlayerMovement : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Collision_Checkpoint")
+        if (collision.gameObject.tag == "Checkpoint")
         {
+            an_torch = collision.gameObject.GetComponent<Animator>();
             Debug.Log(collision.gameObject.transform.position);
             spawnPoint = transform.position;
+            an_torch.SetBool("Lit", true);
         }
     }
 
@@ -150,6 +149,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Jump()
     {
+        Debug.Log(isOnGround);
         if (tryingToJump && isOnGround)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
