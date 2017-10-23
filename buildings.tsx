@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="Buildings" tilewidth="70" tileheight="70" tilecount="98" columns="0">
+<tileset name="Buildings" tilewidth="129" tileheight="71" tilecount="119" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/anemometer.png"/>
@@ -294,5 +294,75 @@
  </tile>
  <tile id="97">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/windowOpen.png"/>
+ </tile>
+ <tile id="98">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/bush.png"/>
+ </tile>
+ <tile id="99">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/cactus.png"/>
+ </tile>
+ <tile id="100">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/chain.png"/>
+ </tile>
+ <tile id="101">
+  <image width="128" height="71" source="Assets/Platformer Art Complete Pack/Base pack/Items/cloud1.png"/>
+ </tile>
+ <tile id="102">
+  <image width="129" height="71" source="Assets/Platformer Art Complete Pack/Base pack/Items/cloud2.png"/>
+ </tile>
+ <tile id="103">
+  <image width="129" height="71" source="Assets/Platformer Art Complete Pack/Base pack/Items/cloud3.png"/>
+ </tile>
+ <tile id="104">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/mushroomBrown.png"/>
+ </tile>
+ <tile id="105">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/mushroomRed.png"/>
+ </tile>
+ <tile id="106">
+  <image width="19" height="14" source="Assets/Platformer Art Complete Pack/Base pack/Items/particleBrick1a.png"/>
+ </tile>
+ <tile id="107">
+  <image width="21" height="21" source="Assets/Platformer Art Complete Pack/Base pack/Items/particleBrick1b.png"/>
+ </tile>
+ <tile id="108">
+  <image width="19" height="14" source="Assets/Platformer Art Complete Pack/Base pack/Items/particleBrick2a.png"/>
+ </tile>
+ <tile id="109">
+  <image width="21" height="21" source="Assets/Platformer Art Complete Pack/Base pack/Items/particleBrick2b.png"/>
+ </tile>
+ <tile id="110">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/plant.png"/>
+ </tile>
+ <tile id="111">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/plantPurple.png"/>
+ </tile>
+ <tile id="112">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/rock.png"/>
+ </tile>
+ <tile id="113">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/snowhill.png"/>
+ </tile>
+ <tile id="114">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/spikes.png"/>
+  <objectgroup draworder="index">
+   <object id="2" type="Death" x="4" y="39" width="61" height="28"/>
+  </objectgroup>
+ </tile>
+ <tile id="115">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/springboardDown.png"/>
+  <objectgroup draworder="index"/>
+ </tile>
+ <tile id="116">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/springboardUp.png"/>
+  <objectgroup draworder="index">
+   <object id="2" type="Bounce" x="1" y="20" width="68" height="50"/>
+  </objectgroup>
+ </tile>
+ <tile id="117">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/weight.png"/>
+ </tile>
+ <tile id="118">
+  <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Base pack/Items/weightChained.png"/>
  </tile>
 </tileset>

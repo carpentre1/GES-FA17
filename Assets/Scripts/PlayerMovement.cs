@@ -57,6 +57,11 @@ public class PlayerMovement : MonoBehaviour {
         if(isOnGround)
         {
             canDoubleJump = true;
+            //an.SetBool("isOnGround", true);
+        }
+        else
+        {
+            //an.SetBool("isOnGround", false);
         }
         //Jump();
         //Movement();
@@ -157,12 +162,14 @@ public class PlayerMovement : MonoBehaviour {
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
             tryingToJump = false;
+            //an.SetBool("isOnGround", false);
         }
         else if (tryingToJump && !isOnGround && canDoubleJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
             canDoubleJump = false;
             tryingToJump = false;
+            //an.SetBool("isOnGround", false);
         }
         else
         {
