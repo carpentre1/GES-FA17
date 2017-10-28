@@ -3,12 +3,21 @@
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cake.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="1">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeCenter.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="2">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeCenter_rounded.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="3">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeCliffLeft.png"/>
@@ -24,39 +33,69 @@
  </tile>
  <tile id="7">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalf.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="8">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalfAlt.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="9">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalfAltLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="10">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalfAltMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="11">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalfAltRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="12">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalfLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="13">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalfMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="14">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHalfRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="15">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHillLeft.png"/>
  </tile>
  <tile id="16">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHillLeft2.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="17">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHillRight.png"/>
  </tile>
  <tile id="18">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeHillRight2.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="19">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeLedgeLeft.png"/>
@@ -66,12 +105,21 @@
  </tile>
  <tile id="21">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="22">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="23">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cakeRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="24">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/candyBlue.png"/>
@@ -87,27 +135,45 @@
  </tile>
  <tile id="28">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/canePink.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="20" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="29">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/canePinkSmall.png"/>
  </tile>
  <tile id="30">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/canePinkTop.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="31">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/canePinkTopAlt.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="32">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cherry.png"/>
  </tile>
  <tile id="33">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/choco.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="34">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoCenter.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="35">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoCenter_rounded.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="36">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoCliffLeft.png"/>
@@ -150,12 +216,18 @@
  </tile>
  <tile id="49">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoHillLeft2.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="50">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoHillRight.png"/>
  </tile>
  <tile id="51">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoHillRight2.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="52">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoLedgeLeft.png"/>
@@ -165,12 +237,21 @@
  </tile>
  <tile id="54">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="55">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="56">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/chocoRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="57">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/cookieBrown.png"/>
@@ -198,48 +279,90 @@
  </tile>
  <tile id="65">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/gummyWormGreenEnd.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="50" y="23" width="20" height="47"/>
+  </objectgroup>
  </tile>
  <tile id="66">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/gummyWormGreenHead.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="67">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/gummyWormGreenMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="68">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/gummyWormRedEnd.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="50" y="23" width="20" height="47"/>
+  </objectgroup>
  </tile>
  <tile id="69">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/gummyWormRedHead.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="70">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/gummyWormRedMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="71">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/heart.png"/>
  </tile>
  <tile id="72">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCaneChoco.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="73">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCaneChocoTop.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="74">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCaneGreen.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="75">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCaneGreenTop.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="76">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCanePink.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="77">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCanePinkTop.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="78">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCaneRed.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="79">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/hillCaneRedTop.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="80">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopBase.png"/>
@@ -258,24 +381,45 @@
  </tile>
  <tile id="85">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopFruitGreen.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="86">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopFruitRed.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="87">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopFruitYellow.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="88">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopGreen.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="89">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopRed.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="90">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopWhiteGreen.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="91">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/lollipopWhiteRed.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="92">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Candy expansion/Tiles/waffleChoco.png"/>
