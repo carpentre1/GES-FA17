@@ -32,6 +32,15 @@ public class PlayerMovement : MonoBehaviour {
     public bool canDoubleJump;
     public int coins = 0;
 
+    public AudioClip jump;
+    public AudioClip doublejump;
+    public AudioClip checkpoint;
+    public AudioClip finish;
+    public AudioClip death;
+    public AudioClip bounce;
+
+    private LevelManager levelManager;
+
 
     Vector3 spawnPoint;
 
@@ -46,6 +55,7 @@ public class PlayerMovement : MonoBehaviour {
         //transform.position = new Vector3(1, 1, 1);
         rb = GetComponent<Rigidbody2D>();
         an = GetComponent<Animator>();
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
 
     }
 	
@@ -108,10 +118,6 @@ public class PlayerMovement : MonoBehaviour {
         {
             transform.position = spawnPoint;
         }
-        if (collision.gameObject.name == "Finish")
-        {
-            transform.position = spawnPoint;
-        }
         if (collision.gameObject.name == "Checkpoint")
         {
             spawnPoint = collision.gameObject.transform.position;
@@ -147,6 +153,11 @@ public class PlayerMovement : MonoBehaviour {
             Debug.Log(collision.gameObject.transform.position);
             spawnPoint = transform.position;
             an_torch.SetBool("Lit", true);
+        }
+        if (collision.gameObject.tag == "Finish")
+        {
+            levelManager.FinishReached();
+            transform.position = spawnPoint;
         }
     }
 

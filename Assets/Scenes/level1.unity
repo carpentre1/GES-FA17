@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 336727610}
   - component: {fileID: 336727609}
   m_Layer: 5
-  m_Name: GemMax
+  m_Name: GemSlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -520,14 +520,14 @@ RectTransform:
   m_GameObject: {fileID: 336727607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3001825, y: 0.3001825, z: 0.9999125}
+  m_LocalScale: {x: 1, y: 1, z: 0.9999125}
   m_Children: []
   m_Father: {fileID: 396115093}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 68.79999, y: -19.899994}
+  m_AnchoredPosition: {x: 67.5, y: -65.8}
   m_SizeDelta: {x: 220.2, y: 170.63}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &336727609
@@ -550,12 +550,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 130
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: 45ae0e398f15de44a9ae5c2b8d84c773, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 150
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1257,7 +1257,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807047117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.08, y: 16.54, z: 0}
+  m_LocalPosition: {x: 80.03, y: 16.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1420,6 +1420,46 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &995659879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 995659881}
+  - component: {fileID: 995659880}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &995659880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995659879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe324c5f982b96149b1a6fed69574a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &995659881
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995659879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.9016347, y: 1.0514294, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134513312 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1227162940490992, guid: e374a1c649b54564cbd3f4085736f80d,
@@ -1731,6 +1771,12 @@ MonoBehaviour:
   maxYSpeed: 15
   canDoubleJump: 0
   coins: 0
+  jump: {fileID: 0}
+  doublejump: {fileID: 0}
+  checkpoint: {fileID: 0}
+  finish: {fileID: 0}
+  death: {fileID: 0}
+  bounce: {fileID: 0}
 --- !u!58 &1252200589
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3105,7 +3151,7 @@ GameObject:
   - component: {fileID: 2007191981}
   - component: {fileID: 2007191980}
   m_Layer: 5
-  m_Name: GemSlash
+  m_Name: GemMax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
