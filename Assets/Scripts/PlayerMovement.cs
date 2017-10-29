@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 
 //in Tiled: unity:sortingLayerName        Ground / unity:tag unity:layer (physics layer)
@@ -50,13 +51,18 @@ public class PlayerMovement : MonoBehaviour {
     private float horizontalInput;
 
     void Start () {
-        spawnPoint = GameObject.FindGameObjectWithTag("Spawn").transform.position;
-        Debug.Log(spawnPoint);
-        //transform.position = new Vector3(1, 1, 1);
+        StartLevel();
         rb = GetComponent<Rigidbody2D>();
         an = GetComponent<Animator>();
         levelManager = GameObject.FindObjectOfType<LevelManager>();
+        
 
+    }
+
+    void StartLevel()
+    {
+        spawnPoint = GameObject.FindGameObjectWithTag("Spawn").transform.position;
+        transform.position = spawnPoint;
     }
 	
 	void Update ()//test for input here

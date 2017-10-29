@@ -4,25 +4,25 @@
  <tile id="0">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/beam.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="1">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/beamBolts.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="2">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/beamBoltsHoles.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="3">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/beamBoltsNarrow.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="0" y="12" width="70" height="48"/>
+   <object id="2" type="Ground" x="0" y="12" width="70" height="48"/>
   </objectgroup>
  </tile>
  <tile id="4">
@@ -33,11 +33,14 @@
  </tile>
  <tile id="6">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/beamHoles.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="7">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/beamNarrow.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="12" width="70" height="48"/>
+   <object id="1" type="Ground" x="0" y="12" width="70" height="48"/>
   </objectgroup>
  </tile>
  <tile id="8">
@@ -52,7 +55,7 @@
  <tile id="11">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/dirtCaveRockLarge.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="0" y="0" width="70" height="70"/>
+   <object id="2" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="12">
@@ -102,13 +105,13 @@
  <tile id="21">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserDown.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="10" y="0" width="50" height="70"/>
+   <object id="1" type="Ground" x="10" y="0" width="50" height="70"/>
   </objectgroup>
  </tile>
  <tile id="22">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserDownShoot.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="10" y="0" width="50" height="66"/>
+   <object id="1" type="Ground" x="10" y="0" width="50" height="66"/>
   </objectgroup>
  </tile>
  <tile id="23">
@@ -129,13 +132,13 @@
  <tile id="26">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserLeft.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="11" width="70" height="58"/>
+   <object id="1" type="Ground" x="0" y="11" width="70" height="58"/>
   </objectgroup>
  </tile>
  <tile id="27">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserLeftShoot.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="5" y="11" width="65" height="59"/>
+   <object id="1" type="Ground" x="5" y="11" width="65" height="59"/>
   </objectgroup>
  </tile>
  <tile id="28">
@@ -162,13 +165,13 @@
  <tile id="33">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserRight.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="11" width="70" height="59"/>
+   <object id="1" type="Ground" x="0" y="11" width="70" height="59"/>
   </objectgroup>
  </tile>
  <tile id="34">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserRightShoot.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="11" width="65" height="59"/>
+   <object id="1" type="Ground" x="0" y="11" width="65" height="59"/>
   </objectgroup>
  </tile>
  <tile id="35">
@@ -197,11 +200,14 @@
  </tile>
  <tile id="43">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserUp.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="10" y="0" width="49" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="44">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserUpShoot.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="10" y="5" width="49" height="65"/>
+   <object id="1" type="Ground" x="10" y="5" width="49" height="65"/>
   </objectgroup>
  </tile>
  <tile id="45">
@@ -222,53 +228,53 @@
  <tile id="48">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metal.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="49">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalCenter.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="50">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalCenterSticker.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="51">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalCenterWarning.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="52">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalCliffLeft.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="53">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalCliffLeftAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="29"/>
-   <object id="2" x="10" y="29" width="60" height="17"/>
-   <object id="3" x="31" y="47" width="39" height="23"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="29"/>
+   <object id="2" type="Ground" x="10" y="29" width="60" height="17"/>
+   <object id="3" type="Ground" x="31" y="47" width="39" height="23"/>
   </objectgroup>
  </tile>
  <tile id="54">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalCliffRight.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="55">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalCliffRightAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="-1" y="46" width="39" height="23"/>
-   <object id="2" x="0" y="29" width="60" height="17"/>
-   <object id="3" x="0" y="0" width="70" height="29"/>
+   <object id="1" type="Ground" x="-1" y="46" width="39" height="23"/>
+   <object id="2" type="Ground" x="0" y="29" width="60" height="17"/>
+   <object id="3" type="Ground" x="0" y="0" width="70" height="29"/>
   </objectgroup>
  </tile>
  <tile id="56">
@@ -280,70 +286,70 @@
  <tile id="58">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalHalf.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="40"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="59">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalHalfLeft.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="40"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="60">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalHalfMid.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="40"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="61">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalHalfRight.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="40"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="62">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalLeft.png"/>
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="70" height="70"/>
-   <object id="2" x="0" y="0" width="70" height="70"/>
+   <object id="2" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="63">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalMid.png"/>
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="70" height="70"/>
-   <object id="2" x="0" y="0" width="70" height="70"/>
+   <object id="2" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="64">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalPlatform.png"/>
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="70" height="18"/>
-   <object id="2" x="0" y="0" width="70" height="18"/>
+   <object id="2" type="Ground" x="0" y="0" width="70" height="18"/>
   </objectgroup>
  </tile>
  <tile id="65">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalPlatformWire.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="18"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="18"/>
   </objectgroup>
  </tile>
  <tile id="66">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalPlatformWireAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="18"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="18"/>
   </objectgroup>
  </tile>
  <tile id="67">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalRight.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="68">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/metalRounded.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="69">

@@ -49,26 +49,38 @@
  <tile id="9">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlock.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="10">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlockAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="11">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlockHalf.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="12">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceBlockHalfAlt.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="13">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceWater.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Death" x="0" y="30" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="14">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterAlt.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Death" x="0" y="29" width="70" height="41"/>
+  </objectgroup>
  </tile>
  <tile id="15">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterDeep.png"/>
@@ -96,20 +108,26 @@
  </tile>
  <tile id="19">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Death" x="0" y="30" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="20">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iceWaterMidAlt.png"/>
+  <objectgroup draworder="index">
+   <object id="2" type="Death" x="0" y="30" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="21">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/igloo.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="22">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iglooAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="23">
@@ -118,7 +136,7 @@
  <tile id="24">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iglooRoof.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="25">
@@ -157,7 +175,7 @@
  <tile id="34">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/snowBallBig.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="35">
@@ -193,13 +211,13 @@
  <tile id="45">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottom.png"/>
   <objectgroup draworder="index">
-   <object id="3" x="1" y="70">
+   <object id="3" type="Death" x="1" y="70">
     <polygon points="0,0 10,-30 20,0"/>
    </object>
-   <object id="4" x="25" y="70">
+   <object id="4" type="Death" x="25" y="70">
     <polygon points="0,0 10,-30 20,0"/>
    </object>
-   <object id="5" x="48" y="70">
+   <object id="5" type="Death" x="48" y="70">
     <polygon points="0,0 10,-30 20,0"/>
    </object>
   </objectgroup>
@@ -207,13 +225,13 @@
  <tile id="46">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottomAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="2" y="70">
+   <object id="1" type="Death" x="2" y="70">
     <polygon points="0,0 10,-30 20,0"/>
    </object>
-   <object id="2" x="25" y="70">
+   <object id="2" type="Death" x="25" y="70">
     <polygon points="0,0 10,-15 19,0"/>
    </object>
-   <object id="3" x="48" y="70">
+   <object id="3" type="Death" x="48" y="70">
     <polygon points="0,0 10,-40 21,0"/>
    </object>
   </objectgroup>
@@ -221,13 +239,13 @@
  <tile id="47">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottomAlt2.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="1" y="70">
+   <object id="2" type="Death" x="1" y="70">
     <polygon points="0,0 10,-15 20,0"/>
    </object>
-   <object id="3" x="25" y="70">
+   <object id="3" type="Death" x="25" y="70">
     <polygon points="0,0 10,-23 20,0"/>
    </object>
-   <object id="5" x="48" y="70">
+   <object id="5" type="Death" x="48" y="70">
     <polygon points="0,0 10,-15 20,0"/>
    </object>
   </objectgroup>
@@ -235,13 +253,13 @@
  <tile id="48">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTop.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="1" y="0">
+   <object id="2" type="Death" x="1" y="0">
     <polygon points="0,0 10,30 21,0"/>
    </object>
-   <object id="3" x="25" y="0">
+   <object id="3" type="Death" x="25" y="0">
     <polygon points="0,0 10,30 21,0"/>
    </object>
-   <object id="4" x="48" y="0">
+   <object id="4" type="Death" x="48" y="0">
     <polygon points="0,0 10,30 21,0"/>
    </object>
   </objectgroup>
@@ -249,13 +267,13 @@
  <tile id="49">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTopAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="1" y="0">
+   <object id="1" type="Death" x="1" y="0">
     <polygon points="0,0 10,30 21,0"/>
    </object>
-   <object id="2" x="48" y="0">
+   <object id="2" type="Death" x="48" y="0">
     <polygon points="0,0 10,40 20,0"/>
    </object>
-   <object id="3" x="24" y="0">
+   <object id="3" type="Death" x="24" y="0">
     <polygon points="0,0 10,15 21,0"/>
    </object>
   </objectgroup>
@@ -263,13 +281,13 @@
  <tile id="50">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTopAlt2.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0">
+   <object id="1" type="Death" x="0" y="0">
     <polygon points="0,0 11,17 23,0"/>
    </object>
-   <object id="2" x="24" y="0">
+   <object id="2" type="Death" x="24" y="0">
     <polygon points="0,0 11,25 21,0"/>
    </object>
-   <object id="3" x="48" y="0">
+   <object id="3" type="Death" x="48" y="0">
     <polygon points="0,0 9,16 21,0"/>
    </object>
   </objectgroup>
@@ -277,7 +295,7 @@
  <tile id="51">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikeTop.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="24" y="0">
+   <object id="1" type="Death" x="24" y="0">
     <polygon points="0,0 11,32 22,0"/>
    </object>
   </objectgroup>
@@ -285,7 +303,7 @@
  <tile id="52">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tree.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="53">
@@ -390,74 +408,74 @@
  <tile id="75">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/treeTrunkTop.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="9" y="36" width="26" height="35"/>
-   <object id="2" x="36" y="1" width="22" height="69"/>
+   <object id="1" type="Ground" x="9" y="36" width="26" height="35"/>
+   <object id="2" type="Ground" x="36" y="1" width="22" height="69"/>
   </objectgroup>
  </tile>
  <tile id="76">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundra.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="77">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCenter.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="78">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCenter_rounded.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="79">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffLeft.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="80">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffLeftAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="81">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffRight.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="82">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraCliffRightAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="83">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalf.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="40"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="84">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalfLeft.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="40"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="85">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalfMid.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="40"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="86">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHalfRight.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="0" y="0" width="70" height="40"/>
+   <object id="2" type="Ground" x="0" y="0" width="70" height="40"/>
   </objectgroup>
  </tile>
  <tile id="87">
@@ -466,7 +484,7 @@
  <tile id="88">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHillLeft2.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="89">
@@ -475,7 +493,7 @@
  <tile id="90">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraHillRight2.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="91">
@@ -487,19 +505,19 @@
  <tile id="93">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraLeft.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="94">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraMid.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="95">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/tundraRight.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
 </tileset>

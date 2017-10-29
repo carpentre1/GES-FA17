@@ -183,39 +183,75 @@
  </tile>
  <tile id="60">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="61">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="62">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="59" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="63">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedTopLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="64">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedTopMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="65">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofRedTopRight.png"/>
+  <objectgroup draworder="index">
+   <object id="2" type="Ground" x="59" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="66">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="67">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="68">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="59" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="69">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowTopLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="70">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowTopMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="71">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/roofYellowTopRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="59" y="0" width="11" height="70"/>
+  </objectgroup>
  </tile>
  <tile id="72">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Buildings expansion/Tiles/signBed.png"/>
