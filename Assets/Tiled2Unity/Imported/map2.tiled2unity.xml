@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 10/29/2017 1:40:04 PM-->
+<!--Last exported: 10/30/2017 2:13:17 PM-->
 <Tiled2Unity version="1.0.12.4">
   <AssignMaterial mesh="map2_mesh_0001" material="tiles_spritesheet" />
   <AssignMaterial mesh="map2_mesh_0002" material="spikesBottomAlt2" />

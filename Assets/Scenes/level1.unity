@@ -236,7 +236,7 @@ Transform:
   m_GameObject: {fileID: 168805699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 59, y: 7, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1387989032}
   m_RootOrder: 1
@@ -422,7 +422,7 @@ Transform:
   m_GameObject: {fileID: 218548236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69, y: 8.5, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1387989032}
   m_RootOrder: 3
@@ -527,7 +527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 67.5, y: -65.8}
+  m_AnchoredPosition: {x: 67.5, y: -65.79999}
   m_SizeDelta: {x: 220.2, y: 170.63}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &336727609
@@ -748,7 +748,7 @@ Transform:
   m_GameObject: {fileID: 390339062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 56, y: 6, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1387989032}
   m_RootOrder: 0
@@ -1916,7 +1916,7 @@ Transform:
   m_GameObject: {fileID: 1388559964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 62, y: 8, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1387989032}
   m_RootOrder: 2
@@ -2448,7 +2448,7 @@ Transform:
   m_GameObject: {fileID: 1880474094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 70.5, y: 10, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1387989032}
   m_RootOrder: 4
@@ -3001,7 +3001,7 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1101923664962832, guid: e374a1c649b54564cbd3f4085736f80d, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
