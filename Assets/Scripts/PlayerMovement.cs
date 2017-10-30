@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour {
     bool isOnGround;
     bool facingRight = true;
     bool tryingToJump;
+    bool dead = false;
 
 
     public bool canDoubleJump;
@@ -39,6 +40,8 @@ public class PlayerMovement : MonoBehaviour {
     public AudioClip finish;
     public AudioClip death;
     public AudioClip bounce;
+    public AudioClip gempickup;
+    public AudioClip coinpickup;
 
     private LevelManager levelManager;
 
@@ -73,11 +76,11 @@ public class PlayerMovement : MonoBehaviour {
         if(isOnGround)
         {
             canDoubleJump = true;
-            //an.SetBool("isOnGround", true);
+            an.SetBool("isOnGround", true);
         }
         else
         {
-            //an.SetBool("isOnGround", false);
+            an.SetBool("isOnGround", false);
         }
         //Jump();
         //Movement();
@@ -112,34 +115,63 @@ public class PlayerMovement : MonoBehaviour {
     }
     void Flip()
     {
+        if(dead)
+        {
+            return;
+        }
         facingRight = !facingRight;
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+    void PlayerDeath()
+    {
+        if(!dead)
+        {
+            //if(facingRight = !facingRight)
+            //{
+            //   Flip();
+            //}
+            dead = true;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            an.Play("Hurt");
+            //AudioSource.PlayClipAtPoint(death, transform.position);
+            Invoke("PlayerDeath", .6f);
+        }
+        else
+        {
+            an.Play("Idle");
+            rb.constraints = RigidbodyConstraints2D.None;
+            transform.position = spawnPoint;
+            dead = false;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Collision_Death")
         {
-            transform.position = spawnPoint;
-        }
-        if (collision.gameObject.name == "Checkpoint")
-        {
-            spawnPoint = collision.gameObject.transform.position;
+            if (!dead)
+            {
+                PlayerDeath();
+            }
         }
             if (collision.gameObject.name == "Collision_Bounce")
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength * 1.5f);
+            //AudioSource.PlayClipAtPoint(bounce, transform.position);
         }
         if (collision.gameObject.name == "Coin")
         {
             coins += 1;
+            //AudioSource.PlayClipAtPoint(gempickup, transform.position);
             collision.gameObject.SetActive(false);
         }
         if (collision.gameObject.name == "Jump_Refresh")
         {
             canDoubleJump = true;
+            //AudioSource.PlayClipAtPoint(coinpickup, transform.position);
             collision.gameObject.SetActive(false);
             StartCoroutine(Wait());
             collision.gameObject.SetActive(true);
@@ -156,14 +188,15 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.tag == "Checkpoint")
         {
             an_torch = collision.gameObject.GetComponent<Animator>();
-            Debug.Log(collision.gameObject.transform.position);
+            //AudioSource.PlayClipAtPoint(checkpoint, transform.position);
             spawnPoint = transform.position;
             an_torch.SetBool("Lit", true);
         }
         if (collision.gameObject.tag == "Finish")
         {
             levelManager.FinishReached();
-            transform.position = spawnPoint;
+            //AudioSource.PlayClipAtPoint(finish, transform.position);
+            //transform.position = spawnPoint;
         }
     }
 
@@ -174,19 +207,20 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Jump()
     {
-        Debug.Log(isOnGround);
         if (tryingToJump && isOnGround)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
+            //AudioSource.PlayClipAtPoint(jump, transform.position);
             tryingToJump = false;
-            //an.SetBool("isOnGround", false);
+            an.SetBool("isOnGround", false);
         }
         else if (tryingToJump && !isOnGround && canDoubleJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
+            //AudioSource.PlayClipAtPoint(doublejump, transform.position);
             canDoubleJump = false;
             tryingToJump = false;
-            //an.SetBool("isOnGround", false);
+            an.SetBool("isOnGround", false);
         }
         else
         {

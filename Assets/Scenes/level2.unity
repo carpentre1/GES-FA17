@@ -1144,6 +1144,8 @@ MonoBehaviour:
   finish: {fileID: 0}
   death: {fileID: 0}
   bounce: {fileID: 0}
+  gempickup: {fileID: 0}
+  coinpickup: {fileID: 0}
 --- !u!212 &812561056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2415,6 +2417,14 @@ Prefab:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1314492802873548, guid: f1bf3c415d8027943b96a9d5f6f46d2f, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863635192798038, guid: f1bf3c415d8027943b96a9d5f6f46d2f, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579248143148880, guid: f1bf3c415d8027943b96a9d5f6f46d2f, type: 2}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}

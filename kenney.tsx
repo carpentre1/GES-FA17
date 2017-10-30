@@ -27,7 +27,7 @@
  </tile>
  <tile id="7">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Death" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="9">
@@ -354,7 +354,7 @@
  </tile>
  <tile id="114">
   <objectgroup draworder="index">
-   <object id="4" type="Death" x="-1" y="29" width="71" height="40"/>
+   <object id="4" type="Death" x="-1" y="29" width="71" height="40.875"/>
   </objectgroup>
  </tile>
  <tile id="115">
@@ -450,7 +450,7 @@
  </tile>
  <tile id="138">
   <objectgroup draworder="index">
-   <object id="3" type="Death" x="-1" y="30" width="71" height="40"/>
+   <object id="3" type="Death" x="-1" y="31.25" width="71" height="38.75"/>
   </objectgroup>
  </tile>
  <tile id="139">
@@ -496,7 +496,7 @@
  </tile>
  <tile id="150">
   <objectgroup draworder="index">
-   <object id="6" type="Death" x="-1" y="30" width="71" height="40"/>
+   <object id="6" type="Death" x="-1" y="31.25" width="71" height="38.75"/>
   </objectgroup>
  </tile>
  <tile id="151">

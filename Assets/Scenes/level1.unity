@@ -1777,6 +1777,8 @@ MonoBehaviour:
   finish: {fileID: 0}
   death: {fileID: 0}
   bounce: {fileID: 0}
+  gempickup: {fileID: 0}
+  coinpickup: {fileID: 0}
 --- !u!58 &1252200589
 CircleCollider2D:
   m_ObjectHideFlags: 0

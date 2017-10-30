@@ -384,9 +384,19 @@
  </tile>
  <tile id="79">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/stoneCaveRockLarge.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="25.5">
+    <polygon points="0,0 18,-24 45,-25 65.5,-12 70,44.5 0,44.5"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="80">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/stoneCaveRockSmall.png"/>
+  <objectgroup draworder="index">
+   <object id="2" type="Ground" x="19.6364" y="28">
+    <polygon points="0,0 6.90909,-7.45455 22.2386,-7.375 28.8636,1.125 29.4886,21.875 0.488636,21.625"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="81">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/stoneCaveSpikeBottom.png"/>
