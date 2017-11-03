@@ -54,27 +54,51 @@
  </tile>
  <tile id="17">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedAltLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="18">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedAltMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="19">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedAltMidAlt.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="20">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedAltRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="21">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedLeft.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="22">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedMid.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="23">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedMidAlt.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="24">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomRedRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="70" height="40"/>
+  </objectgroup>
  </tile>
  <tile id="25">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Mushroom expansion/PNG/shroomTanAltLeft.png"/>

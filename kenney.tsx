@@ -420,7 +420,7 @@
  </tile>
  <tile id="132">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="133">
@@ -471,7 +471,7 @@
  </tile>
  <tile id="144">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="145">

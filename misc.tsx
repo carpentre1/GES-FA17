@@ -93,13 +93,13 @@
  <tile id="19">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserBlueHorizontal.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="0" y="26" width="70" height="18"/>
+   <object id="2" type="BlueLaser" x="0" y="26" width="70" height="18"/>
   </objectgroup>
  </tile>
  <tile id="20">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserBlueVertical.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="26" y="0" width="18" height="70"/>
+   <object id="1" type="BlueLaser" x="26" y="0" width="18" height="70"/>
   </objectgroup>
  </tile>
  <tile id="21">
@@ -120,13 +120,13 @@
  <tile id="24">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserGreenHorizontal.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="25" width="70" height="19"/>
+   <object id="1" type="GreenLaser" x="0" y="25" width="70" height="19"/>
   </objectgroup>
  </tile>
  <tile id="25">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserGreenVertical.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="26" y="0" width="18" height="70"/>
+   <object id="1" type="GreenLaser" x="26" y="0" width="18" height="70"/>
   </objectgroup>
  </tile>
  <tile id="26">
@@ -153,13 +153,13 @@
  <tile id="31">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserRedHorizontal.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="25" width="70" height="19"/>
+   <object id="1" type="RedLaser" x="0" y="25" width="70" height="19"/>
   </objectgroup>
  </tile>
  <tile id="32">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserRedVertical.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="26" y="0" width="18" height="70"/>
+   <object id="1" type="RedLaser" x="26" y="0" width="18" height="70"/>
   </objectgroup>
  </tile>
  <tile id="33">
@@ -216,13 +216,13 @@
  <tile id="46">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserYellowHorizontal.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="25" width="70" height="19"/>
+   <object id="1" type="YellowLaser" x="0" y="25" width="70" height="19"/>
   </objectgroup>
  </tile>
  <tile id="47">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Request pack/Tiles/laserYellowVertical.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="26" y="0" width="18" height="70"/>
+   <object id="1" type="YellowLaser" x="26" y="0" width="18" height="70"/>
   </objectgroup>
  </tile>
  <tile id="48">

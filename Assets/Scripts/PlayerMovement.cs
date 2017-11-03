@@ -53,12 +53,12 @@ public class PlayerMovement : MonoBehaviour {
     Animator an_torch;
     private float horizontalInput;
 
-    void Start () {
+    void Start() {
         StartLevel();
         rb = GetComponent<Rigidbody2D>();
         an = GetComponent<Animator>();
         levelManager = GameObject.FindObjectOfType<LevelManager>();
-        
+
 
     }
 
@@ -67,13 +67,13 @@ public class PlayerMovement : MonoBehaviour {
         spawnPoint = GameObject.FindGameObjectWithTag("Spawn").transform.position;
         transform.position = spawnPoint;
     }
-	
-	void Update ()//test for input here
+
+    void Update()//test for input here
     {
         GetMovementInput();
         GetJumpInput();
         UpdateIsOnGround();
-        if(isOnGround)
+        if (isOnGround)
         {
             canDoubleJump = true;
             an.SetBool("isOnGround", true);
@@ -94,7 +94,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         else
         {
-        //    tryingToJump = false;
+            //    tryingToJump = false;
         }
     }
 
@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour {
     }
     void Flip()
     {
-        if(dead)
+        if (dead)
         {
             return;
         }
@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour {
     }
     void PlayerDeath()
     {
-        if(!dead)
+        if (!dead)
         {
             //if(facingRight = !facingRight)
             //{
@@ -150,7 +150,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Collision_Death")
+        if (collision.gameObject.name == "Collision_Death" || collision.gameObject.name == "Collision_RedLaser" || collision.gameObject.name == "Collision_GreenLaser" || collision.gameObject.name == "Collision_BlueLaser" || collision.gameObject.name == "Collision_YellowLaser")
         {
             if (!dead)
             {
@@ -209,6 +209,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (tryingToJump && isOnGround)
         {
+            an.Play("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
             //AudioSource.PlayClipAtPoint(jump, transform.position);
             tryingToJump = false;
