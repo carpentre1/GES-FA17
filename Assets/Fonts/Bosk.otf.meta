@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b29856729be17034b9bbacd62f064dc9
+timeCreated: 1510004886
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bosk Test
+  fontNames:
+  - Bosk Test
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1bed28f591476b640bef7c8229be32c7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

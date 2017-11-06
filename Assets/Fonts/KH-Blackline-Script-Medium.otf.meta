@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e7d910fc3307dbe47aac2c07c9dc9b20
+timeCreated: 1510004886
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KH-Blackline-Script
+  fontNames:
+  - KH-Blackline-Script
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 43afbb2b8f3f12a42a84c38ae954e43f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

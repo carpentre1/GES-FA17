@@ -7,6 +7,11 @@ using System.Linq;
 
 //in Tiled: unity:sortingLayerName        Ground / unity:tag unity:layer (physics layer)
 public class PlayerMovement : MonoBehaviour {
+    ///
+    //edge of first platform in level 2 has no collision?
+    ///
+    public TimerUI timerui;
+
     [SerializeField]
     float movementSpeed = 44f;
 
@@ -29,6 +34,20 @@ public class PlayerMovement : MonoBehaviour {
     bool facingRight = true;
     bool tryingToJump;
     bool dead = false;
+
+    public static int currentLevel = 1;
+
+    public static int deaths = 0;
+
+    public static int deaths_level1 = 0;
+    public static int deaths_level2 = 0;
+    public static int deaths_level3 = 0;
+
+    public static float timer = 0;
+
+    public static float timer_level1 = 0;
+    public static float timer_level2 = 0;
+    public static float timer_level3 = 0;
 
 
     public bool canDoubleJump;
@@ -58,7 +77,7 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         an = GetComponent<Animator>();
         levelManager = GameObject.FindObjectOfType<LevelManager>();
-
+        
 
     }
 
@@ -128,10 +147,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (!dead)
         {
-            //if(facingRight = !facingRight)
-            //{
-            //   Flip();
-            //}
+            timerui.UpdateDeaths(currentLevel);
             dead = true;
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             an.Play("Hurt");
@@ -195,6 +211,24 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.tag == "Finish")
         {
             levelManager.FinishReached();
+            switch (currentLevel)
+            {
+                case 1:
+                    timer_level1 = timer;
+                    break;
+                case 2:
+                    timer_level2 = timer;
+                    break;
+                case 3:
+                    timer_level3 = timer;
+                    break;
+                default:
+                    break;
+            }
+            timer = 0;
+            timerui.NextLevel();
+            Debug.Log("current level:" + currentLevel + "total deaths: " + deaths);
+            Debug.Log("level 1 time:" + timer_level1);
             //AudioSource.PlayClipAtPoint(finish, transform.position);
             //transform.position = spawnPoint;
         }

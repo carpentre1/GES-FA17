@@ -52,7 +52,6 @@ public class LaserTiming : MonoBehaviour {
     {
         if (L.activeSelf)
         {
-            Debug.Log("deactivating");
             L.SetActive(false);
             StartCoroutine(LaserDelay(L, 1));
         }
@@ -93,7 +92,6 @@ public class LaserTiming : MonoBehaviour {
     // Update is called once per frame
     void Update () 
     {
-        Debug.Log(current);
         redCurrent += Time.deltaTime;
         blueCurrent += Time.deltaTime;
         greenCurrent += Time.deltaTime;

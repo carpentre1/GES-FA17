@@ -25,6 +25,14 @@ public class LevelManager : MonoBehaviour
         if (name == "Start Menu") { /*reset*/ }
     }
 
+    public void RestartGame(string name)
+    {
+        Debug.Log("New Level load: " + name);
+        SceneManager.LoadScene(name);
+        PlayerMovement.deaths = 0; PlayerMovement.deaths_level1 = 0; PlayerMovement.deaths_level2 = 0; PlayerMovement.deaths_level3 = 0;
+        PlayerMovement.timer = 0; PlayerMovement.timer_level1 = 0; PlayerMovement.timer_level2 = 0; PlayerMovement.timer_level3 = 0;
+    }
+
     public void QuitRequest()
     {
         Debug.Log("Quit requested");
