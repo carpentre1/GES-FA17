@@ -2,25 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerUI : MonoBehaviour {
 
     public Text txt;
 
-    public static int currentLevel;
+    public static int currentLevel = 0;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        if(this.name == "DeathCounter" || this.name == "DeathDisplay") {
+            currentLevel++;
+            Scene currentScene = SceneManager.GetActiveScene();
+            string sceneName = currentScene.name;
+            Debug.Log("level is " + sceneName + ", currentLevel is " + currentLevel);
+        }
+    }
 
     public void NextLevel()
     {
-        currentLevel++;
-        if(currentLevel == 4)
-        {
-            UpdateFinalBoards();
-        }
     }
 
     public void UpdateDeaths(int level)
