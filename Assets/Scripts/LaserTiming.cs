@@ -27,7 +27,6 @@ public class LaserTiming : MonoBehaviour {
     bool greenActive = true;
     bool yellowActive = true;
 
-    float current = 0;
 
 	// Use this for initialization
 	void Start () {

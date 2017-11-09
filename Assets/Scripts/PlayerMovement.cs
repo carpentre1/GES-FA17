@@ -9,6 +9,7 @@ using System.Linq;
 public class PlayerMovement : MonoBehaviour {
     ///
     //edge of first platform in level 2 has no collision?
+    //level 1 has ! box instead of springboard
     ///
     public TimerUI timerui;
 
@@ -181,6 +182,9 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.name == "Coin")
         {
             coins += 1;
+            Debug.Log(timer);
+            timer -= 5;
+            Debug.Log(timer);
             //AudioSource.PlayClipAtPoint(gempickup, transform.position);
             collision.gameObject.SetActive(false);
         }
@@ -210,8 +214,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (collision.gameObject.tag == "Finish")
         {
-            levelManager.FinishReached();
-            switch (currentLevel)
+            switch (timerui.GetLevel())
             {
                 case 1:
                     timer_level1 = timer;
@@ -226,9 +229,7 @@ public class PlayerMovement : MonoBehaviour {
                     break;
             }
             timer = 0;
-            timerui.NextLevel();
-            Debug.Log("current level:" + currentLevel + "total deaths: " + deaths);
-            Debug.Log("level 1 time:" + timer_level1);
+            levelManager.FinishReached();
             //AudioSource.PlayClipAtPoint(finish, transform.position);
             //transform.position = spawnPoint;
         }

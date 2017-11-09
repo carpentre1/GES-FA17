@@ -23,8 +23,8 @@ public class GemPickup : MonoBehaviour {
         {
             PlayerMovement playermovement = collision.GetComponent<PlayerMovement>();
             playermovement.coins += 1;
+            PlayerMovement.timer -= 5;
             gameObject.SetActive(false); //if restarting a level is added later, will need to reactivate the gems
-            Debug.Log(playermovement.coins);
             gemupdate.GemGained();
 
         }
