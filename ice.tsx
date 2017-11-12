@@ -4,7 +4,7 @@
  <tile id="0">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/caneGreen.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="0" y="0" width="20" height="70"/>
+   <object id="2" type="Ground" x="0" y="0" width="20" height="70"/>
   </objectgroup>
  </tile>
  <tile id="1">
@@ -13,19 +13,19 @@
  <tile id="2">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/caneGreenTop.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="3">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/caneGreenTopAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="4">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/caneRed.png"/>
   <objectgroup draworder="index">
-   <object id="2" x="0" y="0" width="20" height="70"/>
+   <object id="2" type="Ground" x="0" y="0" width="20" height="70"/>
   </objectgroup>
  </tile>
  <tile id="5">
@@ -34,13 +34,13 @@
  <tile id="6">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/caneRedTop.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="7">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/caneRedTopAlt.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="70" height="70"/>
+   <object id="1" type="Ground" x="0" y="0" width="70" height="70"/>
   </objectgroup>
  </tile>
  <tile id="8">
@@ -144,6 +144,11 @@
  </tile>
  <tile id="26">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/iglooRoofRight.png"/>
+  <objectgroup draworder="index">
+   <object id="1" type="Ground" x="0" y="0" width="29" height="70"/>
+   <object id="3" type="Ground" x="29" y="7" width="20" height="63"/>
+   <object id="4" type="Ground" x="49" y="20" width="12" height="50"/>
+  </objectgroup>
  </tile>
  <tile id="27">
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/pineSapling.png"/>
@@ -212,13 +217,13 @@
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottom.png"/>
   <objectgroup draworder="index">
    <object id="3" type="Death" x="1" y="70">
-    <polygon points="0,0 10,-30 20,0"/>
+    <polygon points="3,-2 10,-30 18,-2"/>
    </object>
    <object id="4" type="Death" x="25" y="70">
-    <polygon points="0,0 10,-30 20,0"/>
+    <polygon points="2,-1 10,-30 17,-1"/>
    </object>
    <object id="5" type="Death" x="48" y="70">
-    <polygon points="0,0 10,-30 20,0"/>
+    <polygon points="2,-2 10,-30 18,-2"/>
    </object>
   </objectgroup>
  </tile>
@@ -226,13 +231,13 @@
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottomAlt.png"/>
   <objectgroup draworder="index">
    <object id="1" type="Death" x="2" y="70">
-    <polygon points="0,0 10,-30 20,0"/>
+    <polygon points="2,-1 10,-30 18,-1"/>
    </object>
    <object id="2" type="Death" x="25" y="70">
-    <polygon points="0,0 10,-15 19,0"/>
+    <polygon points="2,-1 10,-15 17,-1"/>
    </object>
    <object id="3" type="Death" x="48" y="70">
-    <polygon points="0,0 10,-40 21,0"/>
+    <polygon points="2,-1 10,-40 18,-1"/>
    </object>
   </objectgroup>
  </tile>
@@ -240,13 +245,13 @@
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesBottomAlt2.png"/>
   <objectgroup draworder="index">
    <object id="2" type="Death" x="1" y="70">
-    <polygon points="0,0 10,-15 20,0"/>
+    <polygon points="3,-1 10,-15 18,-1"/>
    </object>
    <object id="3" type="Death" x="25" y="70">
-    <polygon points="0,0 10,-23 20,0"/>
+    <polygon points="2,-2 10,-23 17,-2"/>
    </object>
    <object id="5" type="Death" x="48" y="70">
-    <polygon points="0,0 10,-15 20,0"/>
+    <polygon points="3,-2 10,-15 17,-2"/>
    </object>
   </objectgroup>
  </tile>
@@ -254,13 +259,13 @@
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTop.png"/>
   <objectgroup draworder="index">
    <object id="2" type="Death" x="1" y="0">
-    <polygon points="0,0 10,30 21,0"/>
+    <polygon points="2,1 10,30 18,1"/>
    </object>
    <object id="3" type="Death" x="25" y="0">
-    <polygon points="0,0 10,30 21,0"/>
+    <polygon points="2,2 10,30 18,2"/>
    </object>
    <object id="4" type="Death" x="48" y="0">
-    <polygon points="0,0 10,30 21,0"/>
+    <polygon points="3,1 10,30 18,1"/>
    </object>
   </objectgroup>
  </tile>
@@ -268,13 +273,13 @@
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTopAlt.png"/>
   <objectgroup draworder="index">
    <object id="1" type="Death" x="1" y="0">
-    <polygon points="0,0 10,30 21,0"/>
+    <polygon points="2,2 10,30 18,1"/>
    </object>
    <object id="2" type="Death" x="48" y="0">
-    <polygon points="0,0 10,40 20,0"/>
+    <polygon points="2,1 10,40 18,1"/>
    </object>
    <object id="3" type="Death" x="24" y="0">
-    <polygon points="0,0 10,15 21,0"/>
+    <polygon points="3,1 10,15 19,1"/>
    </object>
   </objectgroup>
  </tile>
@@ -282,13 +287,13 @@
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikesTopAlt2.png"/>
   <objectgroup draworder="index">
    <object id="1" type="Death" x="0" y="0">
-    <polygon points="0,0 11,17 23,0"/>
+    <polygon points="3,1 11,17 20,1"/>
    </object>
    <object id="2" type="Death" x="24" y="0">
-    <polygon points="0,0 11,25 21,0"/>
+    <polygon points="3,1 11,25 18,1"/>
    </object>
    <object id="3" type="Death" x="48" y="0">
-    <polygon points="0,0 9,16 21,0"/>
+    <polygon points="3,1 9,16 18,1"/>
    </object>
   </objectgroup>
  </tile>
@@ -296,7 +301,7 @@
   <image width="70" height="70" source="Assets/Platformer Art Complete Pack/Ice expansion/Tiles/spikeTop.png"/>
   <objectgroup draworder="index">
    <object id="1" type="Death" x="24" y="0">
-    <polygon points="0,0 11,32 22,0"/>
+    <polygon points="3,1 11,32 20,1"/>
    </object>
   </objectgroup>
  </tile>

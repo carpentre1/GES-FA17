@@ -12,9 +12,9 @@ public class TimerUI : MonoBehaviour {
 
     //grades for time completion
     //extremely good times: 5, 20, 41
-    static float gradeS = 75;
-    static float gradeA = 100;
-    static float gradeB = 150;
+    static float gradeS = 65;
+    static float gradeA = 90;
+    static float gradeB = 140;
     static float gradeC = 200;
 
     static string gradeS_text = "S\nfastest boi in the west";
@@ -123,7 +123,7 @@ public class TimerUI : MonoBehaviour {
             {
                 txt.text = "Grade: " + gradeB_text;
             }
-            else if (totalTime < gradeC)
+            else
             {
                 txt.text = "Grade: " + gradeC_text;
             }

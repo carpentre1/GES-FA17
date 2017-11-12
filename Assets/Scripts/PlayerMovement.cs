@@ -8,8 +8,7 @@ using System.Linq;
 //in Tiled: unity:sortingLayerName        Ground / unity:tag unity:layer (physics layer)
 public class PlayerMovement : MonoBehaviour {
     ///
-    //edge of first platform in level 2 has no collision?
-    //level 1 has ! box instead of springboard
+
     ///
     public TimerUI timerui;
 
@@ -152,7 +151,7 @@ public class PlayerMovement : MonoBehaviour {
             dead = true;
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             an.Play("Hurt");
-            //AudioSource.PlayClipAtPoint(death, transform.position);
+            AudioSource.PlayClipAtPoint(death, transform.position);
             Invoke("PlayerDeath", .6f);
         }
         else
@@ -177,24 +176,15 @@ public class PlayerMovement : MonoBehaviour {
             if (collision.gameObject.name == "Collision_Bounce")
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength * 1.5f);
-            //AudioSource.PlayClipAtPoint(bounce, transform.position);
+            AudioSource.PlayClipAtPoint(bounce, transform.position);
         }
-        if (collision.gameObject.name == "Coin")
+        if (collision.gameObject.transform.parent.gameObject.name == "Gems")
         {
-            coins += 1;
-            Debug.Log(timer);
-            timer -= 5;
-            Debug.Log(timer);
-            //AudioSource.PlayClipAtPoint(gempickup, transform.position);
-            collision.gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(gempickup, transform.position);
         }
-        if (collision.gameObject.name == "Jump_Refresh")
+        if (collision.gameObject.transform.parent.gameObject.name == "Jump Pickups")
         {
-            canDoubleJump = true;
-            //AudioSource.PlayClipAtPoint(coinpickup, transform.position);
-            collision.gameObject.SetActive(false);
-            StartCoroutine(Wait());
-            collision.gameObject.SetActive(true);
+            AudioSource.PlayClipAtPoint(coinpickup, transform.position);
         }
             
     }
@@ -202,15 +192,21 @@ public class PlayerMovement : MonoBehaviour {
     {
         yield return new WaitForSeconds(1.5f);
     }
-
+    List<GameObject> touchedCheckpoints = new List<GameObject>();
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Checkpoint")
         {
-            an_torch = collision.gameObject.GetComponent<Animator>();
-            //AudioSource.PlayClipAtPoint(checkpoint, transform.position);
-            spawnPoint = transform.position;
-            an_torch.SetBool("Lit", true);
+
+            if (!touchedCheckpoints.Contains(collision.gameObject))
+            {
+                AudioSource.PlayClipAtPoint(checkpoint, transform.position);
+                touchedCheckpoints.Add(collision.gameObject);
+                an_torch = collision.gameObject.GetComponent<Animator>();
+                spawnPoint = transform.position;
+                an_torch.SetBool("Lit", true);
+            }
+
         }
         if (collision.gameObject.tag == "Finish")
         {
@@ -233,6 +229,17 @@ public class PlayerMovement : MonoBehaviour {
             //AudioSource.PlayClipAtPoint(finish, transform.position);
             //transform.position = spawnPoint;
         }
+        if (collision.gameObject.transform.parent != null)
+        {
+            if (collision.gameObject.transform.parent.gameObject.name == "Gems")
+            {
+                AudioSource.PlayClipAtPoint(gempickup, transform.position);
+            }
+            if (collision.gameObject.transform.parent.gameObject.name == "Jump Pickups")
+            {
+                AudioSource.PlayClipAtPoint(coinpickup, transform.position);
+            }
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -246,14 +253,14 @@ public class PlayerMovement : MonoBehaviour {
         {
             an.Play("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
-            //AudioSource.PlayClipAtPoint(jump, transform.position);
+            AudioSource.PlayClipAtPoint(jump, transform.position);
             tryingToJump = false;
             an.SetBool("isOnGround", false);
         }
         else if (tryingToJump && !isOnGround && canDoubleJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
-            //AudioSource.PlayClipAtPoint(doublejump, transform.position);
+            AudioSource.PlayClipAtPoint(doublejump, transform.position);
             canDoubleJump = false;
             tryingToJump = false;
             an.SetBool("isOnGround", false);

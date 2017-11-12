@@ -1,17 +1,29 @@
 ﻿# Tiled2Unity generated file. Do not modify by hand.
 # Wavefront file for 'map2_mesh_0046.obj'
 
-# Vertices (Count = 4)
-v -66 -190 0
-v -67 -190 0
-v -67 -189 0
-v -66 -189 0
+# Vertices (Count = 16)
+v -47 -174 0
+v -48 -174 0
+v -48 -173 0
+v -47 -173 0
+v -51 -175 0
+v -52 -175 0
+v -52 -174 0
+v -51 -174 0
+v -55 -175 0
+v -56 -175 0
+v -56 -174 0
+v -55 -174 0
+v -72 -186 0
+v -73 -186 0
+v -73 -185 0
+v -72 -185 0
 
 # Texture cooridinates (Count = 4)
-vt 0 0
 vt 1 0
 vt 1 1
 vt 0 1
+vt 0 0
 
 # Normal
 vn 0 0 -1
@@ -21,4 +33,7 @@ g map2_mesh_0046
 
 # Faces
 f 1/1/1 2/2/1 3/3/1 4/4/1
+f 5/2/1 6/3/1 7/4/1 8/1/1
+f 9/2/1 10/3/1 11/4/1 12/1/1
+f 13/4/1 14/1/1 15/2/1 16/3/1
 
